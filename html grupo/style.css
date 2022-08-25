@@ -55,7 +55,7 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    max-height: max-content;
     position: relative;
     margin: auto;
     
