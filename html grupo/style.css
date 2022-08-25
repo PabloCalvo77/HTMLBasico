@@ -150,9 +150,12 @@ li{
     font-size: 20px;
 }
 
-.fila3{
-    padding-left: 1100px;
-    
+.derechosReservados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    margin: auto;
+    text-align: right;
 }
 
 
