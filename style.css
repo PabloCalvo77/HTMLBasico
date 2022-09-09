@@ -116,11 +116,13 @@ img {
   background: rgb(90, 90, 90);
   border: 2px solid rgb(110, 110, 110);
 }
+
 #cajon2 {
   clear: both;
   background: rgb(110, 110, 110);
   border: 2px solid rgb(110, 110, 110);
 }
+
 .contenedor-imagenes {
   margin-right: 20px;
   display: flex;
@@ -129,8 +131,8 @@ img {
   float: right;
 }
 
-#menu{
-    padding:12%
+#menu {
+  padding: 12%
 }
 
 #menu p {
@@ -140,6 +142,7 @@ img {
   font-family: "Arial";
   text-align: left;
 }
+
 #menu h2 {
   color: white;
   margin-left: 147px;
@@ -147,12 +150,14 @@ img {
   text-align: center;
   font-family: "Trebuchet MS";
 }
+
 #menu i {
   text-align: left;
   color: white;
   font-size: small;
   margin-right: 20px;
 }
+
 #menu h4 {
   text-align: right;
   color: white;
@@ -161,65 +166,74 @@ img {
 
 /* MENU - END */
 
-/* CARRUSEL FOTOS */
+/* CARRUSEL FOTOS - START */
 
-.container{
+.container {
   margin: auto;
-  background-color:  rgb(110, 110, 110);
+  background-color: rgb(110, 110, 110);
   width: 100%;
 
 }
 
-
-ul, li {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+#form-reserva i {
+  text-align: left;
+  color: white;
+  font-size: small;
+  margin-right: 20px;
 }
 
-ul.slider{
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul.slider {
   position: relative;
   width: 100%;
   height: 100%;
- 
+
 }
 
 ul.slider li {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    opacity: 0;
-    width: inherit;
-    height: inherit;
-    transition: opacity .5s;
-    background:#fff;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  transition: opacity .5s;
+  background: #fff;
 }
 
-ul.slider li img{
+ul.slider li img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 ul.slider li:first-child {
-    opacity: 1; /*Mostramos el primer <li>*/
+  opacity: 1;
+  /*Mostramos el primer <li>*/
 }
 
 ul.slider li:target {
-    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  opacity: 1;
+  /*Mostramos el <li> del enlace que pulsemos*/
 }
 
-.menu{
+.menu {
   text-align: center;
   margin: 20px;
 }
 
-.menu li{
+.menu li {
   display: inline-block;
   text-align: center;
 }
 
-.menu li a{
+.menu li a {
   display: inline-block;
   color: white;
   text-decoration: none;
@@ -230,4 +244,39 @@ ul.slider li:target {
   font-size: 20px;
   border-radius: 100%;
 }
+
 /* CARRUSEL FOTOS - END */
+
+/* FORM - START */
+
+#form-reserva p {
+  color: white;
+  font-family: 'Arial';
+  text-align: left;
+}
+
+#form-reserva h2 {
+  color: white;
+  margin-left: 147px;
+  margin-right: 147px;
+  text-align: center;
+  font-family: "Trebuchet MS";
+}
+
+#cajon3 {
+  float: left;
+  margin: 10px;
+}
+
+#cajon4 {
+  margin: 10px;
+  clear: both;
+}
+
+#form-reserva {
+  margin-left: 27%;
+  margin-right: 27%;
+  margin-bottom: 6%;
+}
+
+/* FORM - END */
