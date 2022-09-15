@@ -1,6 +1,6 @@
 let slideIndex = 0;
 showSlides();
-minDateReserva();
+minMaxDateReserva();
 
 function showSlides() {
     let i;
@@ -15,7 +15,7 @@ function showSlides() {
 }
 
 
-function minDateReserva(){
+function minMaxDateReserva(){
     let reservaInput = document.querySelector('#reserva');
     reservaInput.setAttribute("min",setPeriod(0))
     reservaInput.setAttribute("max",setPeriod(7))
