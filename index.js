@@ -17,19 +17,14 @@ function showSlides() {
 
 function minDateReserva(){
     let reservaInput = document.querySelector('#reserva');
-    let now= new Date()    
-    now= now.toISOString();
-    reservaInput.setAttribute("min",modifyDate(1))
-    reservaInput.setAttribute("max",modifyDate(6,true))
+    reservaInput.setAttribute("min",setPeriod(0))
+    reservaInput.setAttribute("max",setPeriod(7))
 }
 
-  function modifyDate(numOfDays,add, date = new Date()) {
-    if(add){
-        date.setDate(date.getDate() + numOfDays);
-    }else{
-        date.setDate(date.getDate() - numOfDays); 
-    }
+  function setPeriod(numOfDays, date = new Date()) {
+    date.setDate(date.getDate() + numOfDays);
     date = date.toISOString().split("T")[0];
+
     return date;
   }
 
