@@ -19,6 +19,17 @@ function minDateReserva(){
     let reservaInput = document.querySelector('#reserva');
     let now= new Date()    
     now= now.toISOString();
-    reservaInput.setAttribute("min",now.split("T")[0])
+    reservaInput.setAttribute("min",modifyDate(1))
+    reservaInput.setAttribute("max",modifyDate(6,true))
 }
+
+  function modifyDate(numOfDays,add, date = new Date()) {
+    if(add){
+        date.setDate(date.getDate() + numOfDays);
+    }else{
+        date.setDate(date.getDate() - numOfDays); 
+    }
+    date = date.toISOString().split("T")[0];
+    return date;
+  }
 
